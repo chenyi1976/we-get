@@ -46,7 +46,7 @@ Basic Usage
 
 .. code-block:: bash
 
-    $ we-get --search "royal pains" --target  the_pirate_bay,1337x --filter "S01"
+    $ we-get --search "Linux.iso" --target  the_pirate_bay,1337x --filter "2016"
 
 General options
 ---------------
@@ -98,9 +98,15 @@ Contributing
 
 Any collaboration is welcome!
 
+* Write blog post about we-get
+* Tweet (@0xlevis)
+* Code
+
+and that's it.
+
 Licence
 -------
 
-We-get is written by @levisabah
+We-get is written by Levi sabah.
 
 `MIT <https://github.com/levisabah/we-get/blob/master/LICENSE>`_
