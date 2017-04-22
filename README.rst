@@ -19,18 +19,18 @@ we-get: command-line tool for searching torrents.
 Installation
 ============
 
-* Option 1
+we-get can be installed directly by running:
 
 .. code-block:: bash
 
-    $ sudo python setup.py install
+    $ python setup.py install
 
 
-* Option 2
+alternatively you can use `pip` 
 
 .. code-block:: bash
 
-    $ sudo pip install git+https://github.com/levisabah/we-get
+    $ pip install git+https://github.com/levisabah/we-get
 
 
 Dependencies
@@ -38,15 +38,19 @@ Dependencies
 
 `Python <https://www.python.org/>`_ 3.5 or above
 
+and the following Python packages:
 
+* `colorama <https://github.com/tartley/colorama>`_
+* `docopt <https://github.com/docopt/docopt>`_
+* `prompt_toolkit <https://github.com/jonathanslenders/python-prompt-toolkit>`_
+ 
 Platforms
 ==========
 
 * Linux
+* BSD
 * Mac
 * Windows
-
-Mainly tested on linux.
 
 Basic Usage
 ===========
@@ -54,6 +58,12 @@ Basic Usage
 .. code-block:: bash
 
     $ we-get --search "Linux.iso" --target  the_pirate_bay,1337x --filter "2016"
+
+advanced example:
+
+.. code-block:: bash
+
+    $ we-get -s "Linux.iso" -t all -f "2016,2012,2014" -n10
 
 General options
 ---------------
@@ -87,7 +97,6 @@ Video options
 ================ ==================================================================
 
 
-
 See also ``we-get --help``.
 
 Supported websites
@@ -98,22 +107,18 @@ Supported websites
 * eztv
 * yts
 
-and the list will grow.
+to list the supported websites run:
+
+.. code-block:: bash
+
+    $ we-get -G
 
 Contributing
 ------------
 
 Any collaboration is welcome!
 
-* Write blog post about we-get
-* Tweet (@0xlevis)
-* Code
-
-and that's it.
-
 Licence
 -------
-
-We-get is written by Levi sabah.
 
 `MIT <https://github.com/levisabah/we-get/blob/master/LICENSE>`_
