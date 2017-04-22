@@ -115,7 +115,6 @@ class WGSelect(object):
         items = dict()
 
         if self.targets[0] == "all":
-            msg_warning("using 'all' is not recommended!")
             self.targets.pop()
             self.targets = list_wg_modules()
 
