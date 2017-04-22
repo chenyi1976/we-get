@@ -3,6 +3,13 @@ we-get: command-line tool for searching torrents.
 
 .. image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square   :target:
 
+.. class:: no-web
+
+    .. image:: https://raw.githubusercontent.com/wiki/levisabah/we-get/screenshots/we_get.gif
+        :alt: we-get gif
+        :width: 100%
+        :align: center
+
 .. class:: head
 
 .. contents::
