@@ -18,7 +18,7 @@ from prompt_toolkit import prompt
 from prompt_toolkit.history import InMemoryHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
 
-class Shell(object):
+class shell(object):
     def __init__(self):
         self.prompt = None
         self.pargs = None
