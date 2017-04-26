@@ -40,6 +40,8 @@ alternatively you can use `pip`
     $ pip install we-get
 
 
+To install we-get globally use `sudo` before the commands above.
+
 Dependencies
 ============
 
