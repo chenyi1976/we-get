@@ -136,7 +136,7 @@ def pkgpath():
 def random_user_agent():
     """ rand_user_agent - return random user agent from txt/useragents.txt
     """
-    agents_path = mkpath("%s/txt/useragents.txt" % (pkgpath()))
+    agents_path = mkpath("%s/extra/useragents.txt" % (pkgpath()))
     try: 
         data = open(agents_path, "r").readlines()
         return choice(data)[:-1]
