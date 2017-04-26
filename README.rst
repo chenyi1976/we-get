@@ -1,7 +1,14 @@
 we-get: command-line tool for searching torrents.
 #################################################
 
-.. image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square   :target:
+.. image:: https://img.shields.io/pypi/v/we-get.svg
+    :target: https://pypi.python.org/pypi/we-get
+
+.. image:: https://img.shields.io/pypi/l/we-get.svg
+    :target: https://pypi.python.org/pypi/we-get
+
+.. image:: https://img.shields.io/pypi/pyversions/we-get.svg
+    :target: https://pypi.python.org/pypi/we-get
 
 .. class:: no-web
 
@@ -30,7 +37,7 @@ alternatively you can use `pip`
 
 .. code-block:: bash
 
-    $ pip install git+https://github.com/levisabah/we-get
+    $ pip install we-get
 
 
 Dependencies
