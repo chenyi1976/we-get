@@ -41,7 +41,7 @@ General options:
   -v --version          Show version.
 """
 
-class WGSelect(object):
+class wg_select(object):
     """ Select which modules to run """
     def __init__(self, pargs):
         self.pargs = pargs
@@ -154,8 +154,8 @@ class WGSelect(object):
         else:
             # XXX: import we_get.core.shell is here for optimization.
             # we-get will load 50% faster!
-            from we_get.core.shell import Shell
-            self.shell = Shell()
+            from we_get.core.shell import shell
+            self.shell = shell()
             self.shell.shell(self.items, self.pargs)
     
 class WG(object):
@@ -195,5 +195,5 @@ class WG(object):
             exit(1)
 
     def start(self):
-        sel = WGSelect(self.parguments)
+        sel = wg_select(self.parguments)
         sel.run()
