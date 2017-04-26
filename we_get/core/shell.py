@@ -4,8 +4,8 @@ See the file 'LICENSE' for copying.
 """
 
 import re
+import sys
 from json import dumps
-from sys import stdout
 from we_get.core.utils import printc
 from we_get.core.utils import printc_raw
 from we_get.core.utils import color
@@ -116,9 +116,9 @@ class shell(object):
         """
         self.pargs = pargs
         self.items = items
-        stdout.write('\n') # When the fetching messege ends need to add \n after \r.
-        self.prompt_show_items()
         history = InMemoryHistory()
+        sys.stdout.write('\n') # when msg_fetching ends.
+        self.prompt_show_items()
 
         while True:
             p = prompt(u'we-get > ', history=history,
