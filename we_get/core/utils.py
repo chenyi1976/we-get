@@ -68,8 +68,11 @@ def msg_fetching(target):
     """ msg_fetching: Show message hen fetching data from @target."
       @param target: name
     """
-    sys.stdout.write("%s#%s Fetching data from %s\'%s'%s ...\r" % (Fore.YELLOW, Style.RESET_ALL, 
-        Fore.BLUE, target, Style.RESET_ALL))
+    sys.stdout.write("%s#%s fetching data from %s\'%s'%s ...\r" % (Fore.YELLOW,
+        Style.RESET_ALL,
+        Fore.GREEN,
+        target,
+        Style.RESET_ALL))
 
 def color(color, msg):
     """ color: return colored text using colorama.
