@@ -48,9 +48,9 @@ class eztv(object):
                     seeds = '0'
                     # EZTv will not return lecches ):
                     leeches = "?"
-                    magnet = re.findall(r'href=[\'"]?([^\'">]+)', item)[2]
-                    name = self.module.fix_name(self.module.magnet2name(magnet))
-                    self.items.update( { name : { 'seeds' : seeds, 'leeches' : leeches, 'link' : magnet} })
+                magnet = re.findall(r'href=[\'"]?([^\'">]+)', item)[2]
+                name = self.module.fix_name(self.module.magnet2name(magnet))
+                self.items.update( { name : { 'seeds' : seeds, 'leeches' : leeches, 'link' : magnet} })
 
     def search(self):
         url = "%s%s" % (BASE_URL, SEARCH_LOC % (self.search_query))
